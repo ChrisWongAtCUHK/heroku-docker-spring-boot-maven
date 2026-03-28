@@ -18,3 +18,7 @@ docker build -t heroku-docker-spring-boot-maven-app .
 ```
 docker run -d -p 9000:9000 heroku-docker-spring-boot-maven-app
 ```
+### Build and run container with `docker-compose.yml`
+```
+docker compose up --build
+```

@@ -1,0 +1,12 @@
+version: "1"
+services:
+  directus:
+    container_name: heroku-docker-spring-boot-maven-app
+    image: heroku-docker-spring-boot-maven-app:latest
+    ports:
+      - 9000:9000
+    environment:
+      PORT: "9000"
+    
+
+
