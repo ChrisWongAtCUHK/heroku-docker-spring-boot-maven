@@ -12,11 +12,11 @@ mvn spring-boot:run
 ```
 ### Build Docker image
 ```
-docker build -t heroku-docker-spring-boot-maven-app .
+docker build -t heroku-docker-spring-boot-maven .
 ```
 ### Run Docker container
 ```
-docker run -d -p 9000:9000 heroku-docker-spring-boot-maven-app
+docker run --name heroku-docker-spring-boot-maven-container -d -p 9000:9000 heroku-docker-spring-boot-maven
 ```
 ### Build and run container with `docker-compose.yml`
 ```
@@ -33,7 +33,7 @@ docker build -t heroku-docker-spring-boot-maven-app .
 在 Heroku 上新增一個 app
 ```
 heroku create docker-spring-boot-maven-app
-heroku git:remote --app docker-spring-boo-maven-app
+heroku git:remote --app docker-spring-boot-maven-app
 ```
 
 部署到 Heroku
